@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Modak&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* .exo-<uniquifier> {
+    font-family: "Exo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+  } */
+
+  /* .modak-regular {
+    font-family: "Modak", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  } */
+  
+
+/* .montserrat {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+} */
+  
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-family: "Montserrat", sans-serif;
+}
+
+.container {
+    background-color: black;
+    color: white;
+    height: auto;
+    width: 100vw;
+}
+
+.opening {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+
+.navbar {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    font-size: 17px;
+}
+
+.vijnana {
+    font-size: 20px;
+    background-color: #4040f0;
+    height: 100%;
+    margin: 0px 5px 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 0px 50px 0px 10px ;
+    clip-path: polygon(0% 0%, 100% 0%, 70% 100%, 0% 100%);
+    shape-outside: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+.navigation  {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin: 10px 20px 10px 10px;
+    gap: 20px;
+}
+
+.opening-elements {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.banner-counter {
+    /* height: 50%; */
+    height: 100%;
+    background-image: url("../img/banner.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.counter {
+    display: flex;
+    gap: 30px;
+    height: 100px;
+    /* background-color: white; */
+}
+
+.counter-element {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* line-height: 30px; */
+    line-height: 50px;
+}
+
+.line {
+    height: 50%;
+    width: 5px;
+    background-color: white;
+}
+
+.counter-time {
+    font-family: "Modak", serif;
+    font-size: 130px;
+} 
+
+.counter-text {
+    font-family: "Modak", serif;
+}
+
+.info {
+    height:50%;
+    background-color: #1f1f2f;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    display: none;
+}
+
+h2 {
+    font-family: "Exo", sans-serif;
+    font-weight: 800;
+    font-size: 30px;
+}
+
+p{
+    font-weight: 200;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    flex-direction: column;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    flex-direction: column;
+}
+
+.intro p, .about p {
+    width: 90%;
+    margin: 10px;
+    text-align: center;
+}
+
+.vertical-line {
+    background-color: white;
+    width: 90%;
+    height: 1px;
+}
