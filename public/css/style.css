@@ -93,7 +93,8 @@ body {
     right: 0;
     bottom: 0;
     display: flex;
-    width: 100%;
+    max-width: 100%;
+    /* height: 100%; */
 }
 
 .banner-counter {
@@ -137,7 +138,7 @@ body {
 }
 
 .info {
-    height: 50vh;
+    height: auto;
     background-color: #1f1f2f;
     display: flex;
     width: 100%;
@@ -146,11 +147,13 @@ body {
     align-items: center;
     gap: 20px;
 }
+
 .info-elements {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin: 40px 40px 40px 0;
 }
 
 h2 {
@@ -208,7 +211,7 @@ p{
 
 .event-list {
     display: flex;
-    overflow-x: scroll;
+    overflow-x: auto;
 }
 
 .event {
