@@ -1,32 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Modak&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* .exo-<uniquifier> {
-    font-family: "Exo", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: <weight>;
-    font-style: normal;
-  } */
-
-  /* .modak-regular {
-    font-family: "Modak", system-ui;
-    font-weight: 400;
-    font-style: normal;
-  } */
-  
-
-/* .montserrat {
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: <weight>;
-    font-style: normal;
-} */
-  
-
 * {
     margin: 0;
     padding: 0;
     border: none;
     font-family: "Montserrat", sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    border-radius: 20px;
+    border: none;
+}
+
+::-webkit-scrollbar-track {
+    background: #1f1f1f;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #1f1f1f;
+    border-radius: 20px;
+    border: 3px solid #bbb;
+}
+
+body {
+    overflow-x: hidden;
 }
 
 .container {
@@ -38,15 +37,18 @@
 
 .opening {
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     display: grid;
     grid-template-rows: auto 1fr;
+    overflow: hidden;
 }
 
 .navbar {
     display: grid;
     grid-template-columns: auto 1fr;
     font-size: 17px;
+    z-index: 1;
+    background-color: black;
 }
 
 .vijnana {
@@ -59,7 +61,6 @@
     justify-content: start;
     padding: 0px 50px 0px 10px ;
     clip-path: polygon(0% 0%, 100% 0%, 70% 100%, 0% 100%);
-    shape-outside: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 }
 
 .navigation  {
@@ -77,22 +78,39 @@
     flex-direction: column;
 }
 
+.banner {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    justify-content: center;
+    z-index: 0;
+}
+
+.banner-video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+}
+
 .banner-counter {
-    /* height: 50%; */
     height: 100%;
-    background-image: url("../img/banner.jpg");
+    width: 100%;
     background-position: center;
     background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1;
 }
 
 .counter {
     display: flex;
     gap: 30px;
     height: 100px;
-    /* background-color: white; */
 }
 
 .counter-element {
@@ -100,7 +118,6 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    /* line-height: 30px; */
     line-height: 50px;
 }
 
@@ -112,7 +129,7 @@
 
 .counter-time {
     font-family: "Modak", serif;
-    font-size: 130px;
+    font-size: 150px;
 } 
 
 .counter-text {
@@ -120,14 +137,20 @@
 }
 
 .info {
-    height:50%;
+    height: 50vh;
     background-color: #1f1f2f;
     display: flex;
+    width: 100%;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    display: none;
+}
+.info-elements {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 h2 {
@@ -144,28 +167,80 @@ p{
 
 .intro {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 90%;
-    flex-direction: column;
-}
-
-.about {
-    display: flex;
     justify-content: center;
-    align-items: center;
     width: 90%;
     flex-direction: column;
-}
-
-.intro p, .about p {
-    width: 90%;
-    margin: 10px;
-    text-align: center;
 }
 
 .vertical-line {
     background-color: white;
     width: 90%;
     height: 1px;
+    margin: 20px 0 20px 0;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    flex-direction: column;
+}
+
+.intro p, .about p {
+    width: 90%;
+    margin: 10px 10px 10px 0;
+    text-align: left;
+}
+
+.events-programmes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.events-programmes-elements {
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+    margin: 40px;
+}
+
+.event-list {
+    display: flex;
+    overflow-x: scroll;
+}
+
+.event {
+    background-color: #1f1f2f;
+    min-width: 350px;
+    max-width: 350px;
+    margin: 20px 20px 20px 0;
+}
+
+.event-image {
+    width: 100%;
+}
+
+.event-content {
+    padding: 20px;
+}
+
+.event-header {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.event-info {
+    line-height: 23px;
+    margin: 5px 10px 10px 0;
+}
+
+.event-register {
+    background-color: #9f00ff;
+    width: 100px;
+    text-align: center;
+    padding: 5px;
+    font-family: "Exo", sans-serif;
+    font-weight: 700;
 }
