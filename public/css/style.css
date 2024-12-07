@@ -26,6 +26,7 @@
 
 body {
     overflow-x: hidden;
+    /* cursor: none; */
 }
 
 .container {
@@ -33,6 +34,20 @@ body {
     color: white;
     height: auto;
     width: 100vw;
+}
+
+.cursor {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    transition: 0.1s;
+    /* background-color: #7c3aed; */
+    background-color: white;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    mix-blend-mode: difference;
+    z-index: 10;
+    filter: blur(10px);
 }
 
 .opening {
@@ -85,7 +100,7 @@ body {
     align-items: center;
     background-size: cover;
     justify-content: center;
-    z-index: 0;
+    /* z-index: 0; */
 }
 
 .banner-video {
@@ -240,7 +255,7 @@ p{
 }
 
 .event-register {
-    background-color: #9f00ff;
+    background-color: #7c3aed;
     width: 100px;
     text-align: center;
     padding: 5px;
