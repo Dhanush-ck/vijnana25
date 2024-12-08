@@ -5,6 +5,7 @@
     padding: 0;
     border: none;
     font-family: "Montserrat", sans-serif;
+    cursor: none;
 }
 
 ::-webkit-scrollbar {
@@ -26,7 +27,6 @@
 
 body {
     overflow-x: hidden;
-    /* cursor: none; */
 }
 
 .container {
@@ -34,20 +34,6 @@ body {
     color: white;
     height: auto;
     width: 100vw;
-}
-
-.cursor {
-    position: fixed;
-    width: 40px;
-    height: 40px;
-    transition: 0.1s;
-    /* background-color: #7c3aed; */
-    background-color: white;
-    transform: translate(-50%, -50%);
-    border-radius: 50%;
-    mix-blend-mode: difference;
-    z-index: 10;
-    filter: blur(10px);
 }
 
 .opening {
@@ -63,14 +49,17 @@ body {
     grid-template-columns: auto 1fr;
     font-size: 17px;
     z-index: 1;
-    background-color: black;
+    /* background-color: black; */
 }
 
 .vijnana {
-    font-size: 20px;
-    background-color: #4040f0;
+    font-size: 25px;
+    letter-spacing: 10px;
+    font-weight: 700;
+    font-family: "Exo", sans-serif;
+    /* background-color: #4040f0; */
     height: 100%;
-    margin: 0px 5px 5px 0;
+    margin: 0px 5px 5px 5px;
     display: flex;
     align-items: center;
     justify-content: start;
@@ -171,10 +160,16 @@ body {
     margin: 40px 40px 40px 0;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
 h2 {
     font-family: "Exo", sans-serif;
     font-weight: 800;
     font-size: 30px;
+    width: auto;
 }
 
 p{
@@ -254,6 +249,11 @@ p{
     margin: 5px 10px 10px 0;
 }
 
+.button {
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+
 .event-register {
     background-color: #7c3aed;
     width: 100px;
@@ -261,4 +261,37 @@ p{
     padding: 5px;
     font-family: "Exo", sans-serif;
     font-weight: 700;
+}
+
+#cursor {
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    pointer-events: none;
+    background-color: white;
+    border-radius: 50%;
+    z-index: 1000;
+    animation: rotate 5s linear infinite;
+    /* transition: 0.1s; */
+    /* background-color: #7c3aed; */
+    /* transform: translate(-50%, -50%); */
+    /* mix-blend-mode: difference; */
+    /* filter: blur(10px); */
+}
+
+h2:hover~#cursor {
+    /* mix-blend-mode: difference; */
+    width: 100px;
+    height: 100px;
+    display: none;
+    transform:translate(-50%, -50%) scale(8);
+}
+
+@keyframes rotate {
+    0% {
+        rotate: 0deg;
+    }
+    100% {
+        rotate: 360deg;
+    }
 }
