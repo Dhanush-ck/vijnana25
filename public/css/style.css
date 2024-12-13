@@ -279,14 +279,6 @@ p {
     /* filter: blur(10px); */
 }
 
-h2:hover~#cursor {
-    /* mix-blend-mode: difference; */
-    width: 100px;
-    height: 100px;
-    display: none;
-    transform:translate(-50%, -50%) scale(8);
-}
-
 .prev-vijnana {
     background-color: #1f1f2f;
     display: flex;
@@ -326,6 +318,20 @@ h2:hover~#cursor {
     height: 100%;
     width: 100%;
     /* object-fit: contain; */
+}
+
+.connect {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.connect-elements {
+    display: grid;
+    width: 90%;
+    grid-template-columns: 1fr 1fr;
+    margin: 40px;
 }
 
 @keyframes rotate {
