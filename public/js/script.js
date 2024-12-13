@@ -14,7 +14,7 @@ function growCursor() {
     // cursor.style.mixBlendMode = 'difference';
     cursor.style.backgroundColor = 'transparent'
     cursor.style.border = '.5px  white dashed'
-    cursor.style.scale = '5';
+    cursor.style.scale = '4';
     isActive = true;
 }
 
