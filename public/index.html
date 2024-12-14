@@ -9,16 +9,33 @@
 <body>
     <div class="cursor" id="cursor"></div>
     <div class="container">
-        <div class="opening">
+        <div class="opening" id="Home">
             <div class="navbar">
                 <div class="vijnana">
                     Vijnana
                 </div>
                 <div class="navigation">
-                    <span><a href="">Home</a></span>
-                    <span><a href="">About</a></span>
-                    <span><a href="">Events</a></span>
-                    <span><a href="">Contact us</a></span>
+                    <span><a href="#Home">Home</a></span>
+                    <span><a href="#About">About</a></span>
+                    <span><a href="#Events">Events</a></span>
+                    <span><a href="#Contact">Contact us</a></span>
+                </div>
+                <div class="menu-holder">
+                    <img src="./img/burger-menu.png" class="menu" id="menu">
+                </div>
+                <div class="menubar">
+                    <div class="items">
+                        <span class="item"><a href="#Home">Home</a></span>
+                        <span class="item"><a href="#About">About</a></span>
+                        <span class="item"><a href="#Events">Events</a></span>
+                        <span class="item"><a href="#Contact">Contact us</a></span>                       
+                    </div>
+                    <!-- <ul>
+                        <li><a href="#Home">Home</a></li>
+                        <li><a href="#About">About</a></li>
+                        <li><a href="#Events">Events</a></li>
+                        <li><a href="#Contact">Contact Us</a></li>
+                    </ul> -->
                 </div>
             </div>
             <div class="opening-elements">
@@ -29,30 +46,30 @@
                 </div>
                 <div class="banner-counter">
                     <div class="counter">
-                        <div class="days counter-element">
-                            <div class="counter-time" id="day">03</div>
+                        <div class="days counter-element" style="--i:1">
+                            <div class="counter-time" id="day">00</div>
                             <div class="counter-text">Days</div>
                         </div>
-                        <div class="line">.</div>
-                        <div class="hours counter-element">
-                            <div class="counter-time" id="hour">12</div>
+                        <div class="line" style="--i:1">.</div>
+                        <div class="hours counter-element" style="--i:2">
+                            <div class="counter-time" id="hour">00</div>
                             <div class="counter-text">Hours</div>
                         </div>
-                        <div class="line">.</div>
-                        <div class="minutes counter-element">
-                            <div class="counter-time" id="minute">34</div>
+                        <div class="line" style="--i:2">.</div>
+                        <div class="minutes counter-element" style="--i:3">
+                            <div class="counter-time" id="minute">00</div>
                             <div class="counter-text">Minutes</div>
                         </div>
-                        <div class="line">.</div>
-                        <div class="seconds counter-element">
-                            <div class="counter-time" id="second">15</div>
+                        <div class="line" style="--i:3">.</div>
+                        <div class="seconds counter-element" style="--i:4">
+                            <div class="counter-time" id="second">00</div>
                             <div class="counter-text">Seconds</div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="info">
+        <div class="info" id="About">
             <div class="info-elements">
                 <div class="intro">
                     <h2>Vijnana 2025</h2>
@@ -70,11 +87,11 @@
             </div>
         </div>
 
-        <div class="events-programmes">
+        <div class="events-programmes" id="Events">
             <div class="events-programmes-elements">
                 <h2>Events & Programmes</h2>
                 <div class="event-list">
-                    <div class="event">
+                    <div class="event" style="--i:1">
                         <img src="./img/coding-group.jpg" class="event-image">
                         <div class="event-content">
                             <span class="event-header">Event 1</span>
@@ -91,7 +108,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="event">
+                    <div class="event" style="--i:2">
                         <img src="./img/girl-coding.jpg" class="event-image">
                         <div class="event-content">
                             <span class="event-header">Event 2</span>
@@ -108,7 +125,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="event">
+                    <div class="event" style="--i:3">
                         <img src="./img/boy-coding.jpg" class="event-image">
                         <div class="event-content">
                             <span class="event-header">Event 3</span>
@@ -136,27 +153,27 @@
                     Last year's Vijnana was a resounding success, featuring engaging workshops like Flutter for developers, intense coding contests, and exciting decryption challeges. With a range of events designed to push the boundaries of innovation, participants showcased their skills and creativity in an unforgattable tech experience.
                 </p>
                 <div class="image-list">
-                    <div class="image-holder">
+                    <div class="image-holder" style="--i:1">
                         <img src="./img/boy-coding.jpg">
                     </div>
-                    <div class="image-holder">
+                    <div class="image-holder" style="--i:2">
                         <img src="./img/banner.jpg">
                     </div>
-                    <div class="image-holder">
+                    <div class="image-holder" style="--i:3">
                         <img src="./img/banner.jpg">
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="connect">
+        <div class="connect" id="Contact">
             <div class="connect-elements">
                 <div class="contact">
                     <h2>Contact Us</h2>
                     <p>
                         <a href="tel:">+91 9999999999</a><br>
                         <a href="tel:">+91 9999999999</a><br>
-                        <a href="mailto:dhanushck01@gmail.com">kbmgctvijnana@gmail.com</a>
+                        <a href="mailto:">kbmgctvijnana@gmail.com</a>
                     </p>
                 </div>
                 <div class="follow">
