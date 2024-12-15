@@ -5,7 +5,7 @@
     padding: 0;
     border: none;
     font-family: "Montserrat", sans-serif;
-    cursor: none;
+    /* cursor: none; */
     scroll-behavior: smooth;
 }
 
@@ -76,6 +76,13 @@ body {
     justify-content: end;
     margin: 10px 20px 10px 10px;
     gap: 20px;
+    z-index: 10;
+    pointer-events: all;
+}
+
+.navigation a:hover {
+    color: #7c3aed;
+    filter: drop-shadow(0 0 5px black);
 }
 
 .menubar {
@@ -84,6 +91,7 @@ body {
     top: 0;
     right: 0;
     display: none;
+    pointer-events: all;
 }
 
 ul {
@@ -98,11 +106,23 @@ li {
 .items {
     display: flex;
     flex-direction: column;
+    background-color: rgba(20, 20, 20, 0.2);
+    gap: 10px;
+    pointer-events: all;
+}
+
+.items span {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .item {
-    text-align: end;
-    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* margin: 5px; */
+    font-size: 16px;
+    padding: 7px;
 }
 
 .menu-holder {
@@ -110,6 +130,7 @@ li {
     display: flex;
     justify-content: end;
     align-items: center;
+    pointer-events: all;
 }
 
 .menu {
@@ -124,28 +145,26 @@ li {
     display: flex;
     flex-direction: column;
     pointer-events: none ;
+    position: absolute;
 }
 
 .banner {
     width: 100%;
     overflow: hidden;
-    /* display: flex;
-    align-items: center;
-    background-size: cover;
-    justify-content: center; */
+    display: flex;
+    align-items: end;
+    /* background-size: cover; */
+    justify-content: end;
     /* z-index: 0; */
     opacity: 0 ;
     animation: fadeIn 1s ease forwards;
 }
 
-.banner-video {
+/* .banner-video {
     position: absolute;
     right: 0;
     bottom: 0;
-    /* display: flex; */
-    /* max-width: 100%; */
-    /* height: 100%; */
-}
+} */
 
 .banner-counter {
     height: 100%;
@@ -155,7 +174,8 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1;
+    /* z-index: 1; */
+    /* display: none; */
 }
 
 .counter {
@@ -319,6 +339,12 @@ p {
     padding: 5px;
     font-family: "Exo", sans-serif;
     font-weight: 700;
+    transition: 0.2s;
+}
+
+.event-register:hover {
+    background-color: white;
+    color: #7c3aed;
 }
 
 #cursor {
@@ -446,22 +472,15 @@ p {
     }
 }
 
-@media only screen and (min-width: 400px) and (max-width: 600px) {
-
+@media only screen and (min-width: 300px) and (max-width: 400px) {
     .vijnana {
         font-size: 15px;
-        letter-spacing: 7px;
+        letter-spacing: 5px;
         margin: 2px 5px 5px 0;
     }
 
-    /* .banner {
-        height: 100vh; */
-        /* bottom: auto;
-    } */
-
     .banner-video {
         height: 100vh;
-        /* position: absolute; */
     }
 
     .navigation {
@@ -474,10 +493,75 @@ p {
 
     .menu {
         display: block;
+        height: 20px;
     }
 
-    .banner-counter {
-        /* display: none; */
+    .line {
+        display: none;
+        height: 100%;
+    }
+
+    .counter {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .counter-time {
+        font-size: 100px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    .event {
+        min-width: 300px;
+        max-width: 300px;
+    }
+    
+    .event-register:hover {
+        background-color: #7c3aed;
+        color: white;
+    }
+
+    .image-holder {
+        min-width: 300px;
+        max-width: 300px;
+    }
+    
+    #cursor {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 600px) {
+
+    .vijnana {
+        font-size: 15px;
+        letter-spacing: 7px;
+        margin: 2px 5px 5px 0;
+    }
+
+    .banner-video {
+        height: 100vh;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .menu-holder {
+        display: flex;
+    }
+
+    .menu {
+        display: block;
     }
 
     .line {
@@ -499,28 +583,13 @@ p {
     p {
         font-size: 13px;
     }
+
+    .event-register:hover {
+        background-color: #7c3aed;
+        color: white;
+    }
     
     #cursor {
         display: none;
     }
-
-    /* .opening-elements {
-        height: 100vh;
-    } */
-
-    /* .info {
-        display: none;
-    } */
-
-    /* .events-programmes {
-        display: none;
-    } */
-
-    /* .prev-vijnana {
-        display: none;
-    } */
-
-    /* .connect {
-        display: none;
-    } */
 }
