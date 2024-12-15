@@ -8,62 +8,72 @@ eventList.addEventListener('wheel', (event)=>{
     }
 })
 
-const cursor = document.querySelector('.cursor');
-const header2 = document.querySelectorAll('a');
+const imageList = document.querySelector('.image-list');
+
+// vertical scroll for previous vijnana events 
+imageList.addEventListener('wheel', (event)=>{
+    if(imageList.scrollWidth > imageList.clientWidth){
+        event.preventDefault();
+        imageList.scrollLeft += event.deltaY;        
+    }
+})
+
+// const cursor = document.querySelector('.cursor');
+// const header2 = document.querySelectorAll('a');
 
 // grow cursor on hover 
-function growCursor() {
-    // cursor.style.mixBlendMode = 'difference';
-    cursor.style.backgroundColor = 'transparent'
-    cursor.style.border = '.5px  white dashed'
-    cursor.style.scale = '4';
-    isActive = true;
-}
+// function growCursor() {
+//     // cursor.style.mixBlendMode = 'difference';
+//     cursor.style.backgroundColor = 'transparent'
+//     cursor.style.border = '.5px  white dashed'
+//     cursor.style.scale = '4';
+//     isActive = true;
+// }
 
 // shrink cursor on hover out 
-function shrinkCursor() {
-    // cursor.style.mixBlendMode = 'normal';
-    cursor.style.backgroundColor = 'white'
-    cursor.style.scale = '1';
-    isActive = false;
-}
+// function shrinkCursor() {
+//     // cursor.style.mixBlendMode = 'normal';
+//     cursor.style.backgroundColor = 'white'
+//     cursor.style.scale = '1';
+//     isActive = false;
+// }
 
 // adding cursor animations 
-header2.forEach((header) => {
-    header.addEventListener('mousemove', growCursor)
-    header.addEventListener('mouseleave', shrinkCursor)
-})
+// header2.forEach((header) => {
+//     header.addEventListener('mousemove', growCursor)
+//     header.addEventListener('mouseleave', shrinkCursor)
+// })
 
 // to follow the cursor 
-window.addEventListener('mousemove', (e)=> {
-    var x = e.clientX;
-    var y = e.clientY;
-    cursor.style.left = x + 'px';
-    cursor.style.top = y + 'px';
-})
+// window.addEventListener('mousemove', (e)=> {
+//     var x = e.clientX;
+//     var y = e.clientY;
+//     cursor.style.left = x + 'px';
+//     cursor.style.top = y + 'px';
+// })
 
-var timeout;
-var isHidden = false;
-var isActive = false;
+// var timeout;
+// var isHidden = false;
+// var isActive = false;
 
-document.addEventListener("mousemove", magicMouse);
+// document.addEventListener("mousemove", magicMouse);
 
 // hide the cursor after sometime 
-function magicMouse() {
-    if (timeout) {
-        clearTimeout(timeout);
-    }
-    timeout = setTimeout(function() {
-        if (!isHidden && !isActive) {
-            cursor.style.display = 'none';
-            isHidden = true;
-        }
-    }, 1000);
-    if (isHidden) {
-        cursor.style.display = 'block';
-        isHidden = false;
-    }
-};
+// function magicMouse() {
+//     if (timeout) {
+//         clearTimeout(timeout);
+//     }
+//     timeout = setTimeout(function() {
+//         if (!isHidden && !isActive) {
+//             cursor.style.display = 'none';
+//             isHidden = true;
+//         }
+//     }, 1000);
+//     if (isHidden) {
+//         cursor.style.display = 'block';
+//         isHidden = false;
+//     }
+// };
 
 // animate event list on scroll 
 const observer = new IntersectionObserver(entries => {
@@ -149,5 +159,13 @@ menu.onclick = ()=> {
         menubar.style.display = 'none'
     }
 }
+
+const items = document.querySelectorAll('.item')
+
+items.forEach((item) => {
+    item.onclick = () => {
+        menubar.style.display = 'none'
+    }
+})
 
 window.onload = timer()
