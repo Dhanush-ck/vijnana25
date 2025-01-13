@@ -111,7 +111,7 @@ const hour = document.getElementById('hour')
 const minute = document.getElementById('minute')
 const second = document.getElementById('second')
 
-const targetDate = new Date("January 16 2025 08:00:00").getTime()
+const targetDate = new Date("February 06 2025 09:00:00").getTime()
 
 function timer() {
     const currentDate = new Date().getTime()
@@ -169,3 +169,18 @@ items.forEach((item) => {
 })
 
 window.onload = timer()
+
+const previews = document.querySelectorAll('.preview');
+const prevImg = document.getElementById('prev-img')
+const prevHolder = document.getElementById('prev-holder');
+previews.forEach((preview)=>{
+    preview.addEventListener('click', ()=> {
+        prevImg.src = preview.src;
+        prevHolder.style.display = "flex";
+        console.log(1);
+    })
+})
+
+prevHolder.onclick = ()=>{
+    prevHolder.style.display = 'none';
+}
