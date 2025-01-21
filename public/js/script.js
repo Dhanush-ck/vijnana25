@@ -1,10 +1,15 @@
 const eventList = document.querySelector('.event-list');
+var extra
 
 // vertical scroll using mousewheel
 eventList.addEventListener('wheel', (event)=>{
     if(eventList.scrollWidth > eventList.clientWidth){
         event.preventDefault();
-        eventList.scrollLeft += event.deltaY;        
+        if(event.deltaY<0)
+            extra = -150
+        else
+            extra = 150
+        eventList.scrollLeft += event.deltaY + extra;        
     }
 })
 
@@ -14,7 +19,11 @@ const imageList = document.querySelector('.image-list');
 imageList.addEventListener('wheel', (event)=>{
     if(imageList.scrollWidth > imageList.clientWidth){
         event.preventDefault();
-        imageList.scrollLeft += event.deltaY;        
+        if(event.deltaY<0)
+            extra = -150
+        else
+            extra = 150
+        imageList.scrollLeft += event.deltaY + extra;        
     }
 })
 
