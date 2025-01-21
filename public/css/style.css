@@ -167,7 +167,7 @@ li {
     flex-direction: column;
     pointer-events: none ;
     /* position: absolute; */
-    background-image: url("../img/previous/bg2.jpg");
+    background-image: url("../img/bg.jpg");
     background-position: center;
     background-size: cover;
 }
