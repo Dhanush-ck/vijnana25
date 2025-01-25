@@ -196,31 +196,34 @@ prevHolder.onclick = ()=>{
 
 links = [
     {
-        link : "./img/previous/img5.JPG"
+        link : "./img/current/virtual kickoff  edited.jpg"
     },
     {
-        link : "./img/blind-coding.jpg"
+        link : "./img/current/fingers on fire poster.jpg"
     },
     {
-        link : "./img/previous/img5.JPG"
+        link : "./img/no-image.png"
     },
     {
-        link : "./img/blind-coding.jpg"
+        link : "./img/no-image.png"
     },
     {
-        link : "./img/previous/img5.JPG"
+        link : "./img/no-image.png"
     },
     {
-        link : "./img/blind-coding.jpg"
+        link : "./img/no-image.png"
     },
     {
-        link : "./img/previous/img5.JPG"
+        link : "./img/current/code battle poster.jpg"
     },
     {
-        link : "./img/blind-coding.jpg"
+        link : "./img/no-image.png"
     },
     {
-        link : "./img/blind-coding.jpg"
+        link : "./img/no-image.png"
+    },
+    {
+        link : "./img/no-image.png"
     }
 ];
 
