@@ -104,6 +104,10 @@ body {
     pointer-events: all;
 }
 
+.navigation a {
+    transition: 0.2s;
+}
+
 .navigation a:hover {
     color: #7c3aed;
     filter: drop-shadow(0 0 5px black);
@@ -371,7 +375,8 @@ p {
 
 .button {
     display: grid;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: auto 1fr auto;
+    /* grid-template-columns: 1fr 1fr; */
 }
 
 .event-register {
@@ -387,6 +392,21 @@ p {
 .event-register:hover {
     background-color: white;
     color: #7c3aed;
+}
+
+.more-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #7c3aed;
+    transition: 0.2s;
+}
+    
+.more-info-button {
+    cursor: pointer;
+    &:hover{
+        color: white;
+    }
 }
 
 #cursor {
@@ -467,6 +487,22 @@ p {
     width: 90%;
     grid-template-columns: 1fr 1fr;
     margin: 40px 40px 10px 40px;
+}
+
+.follow img {
+    height: 25px;
+}
+
+.follow a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.follow-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 @keyframes rotate {
@@ -586,6 +622,18 @@ p {
     #cursor {
         display: none;
     }
+
+    .follow {
+        margin: 0 0 0 10px;
+    }
+
+    .follow a {
+        gap: 7px;
+    }
+
+    .follow img {
+        height: 15px;
+    }
 }
 
 @media only screen and (min-width: 400px) and (max-width: 600px) {
@@ -639,5 +687,17 @@ p {
     
     #cursor {
         display: none;
+    }
+
+    .follow {
+        margin: 0 0 0 20px;
+    }
+
+    .follow a {
+        gap: 8px;
+    }
+
+    .follow img {
+        height: 20px;
     }
 }

@@ -193,3 +193,47 @@ previews.forEach((preview)=>{
 prevHolder.onclick = ()=>{
     prevHolder.style.display = 'none';
 }
+
+links = [
+    {
+        link : "./img/current/virtual kickoff  edited.jpg"
+    },
+    {
+        link : "./img/current/fingers on fire poster.jpg"
+    },
+    {
+        link : "./img/no-image.png"
+    },
+    {
+        link : "./img/no-image.png"
+    },
+    {
+        link : "./img/no-image.png"
+    },
+    {
+        link : "./img/no-image.png"
+    },
+    {
+        link : "./img/current/code battle poster.jpg"
+    },
+    {
+        link : "./img/no-image.png"
+    },
+    {
+        link : "./img/no-image.png"
+    },
+    {
+        link : "./img/no-image.png"
+    }
+];
+
+// console.log(links[0].link)
+
+const infos = document.querySelectorAll('.more-info-button')
+
+infos.forEach((info, index)=> {
+    info.onclick = ()=>{
+        prevImg.src = links[index].link;
+        prevHolder.style.display = "flex";
+    }
+})
