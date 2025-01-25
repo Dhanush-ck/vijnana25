@@ -193,3 +193,44 @@ previews.forEach((preview)=>{
 prevHolder.onclick = ()=>{
     prevHolder.style.display = 'none';
 }
+
+links = [
+    {
+        link : "./img/previous/img5.JPG"
+    },
+    {
+        link : "./img/blind-coding.jpg"
+    },
+    {
+        link : "./img/previous/img5.JPG"
+    },
+    {
+        link : "./img/blind-coding.jpg"
+    },
+    {
+        link : "./img/previous/img5.JPG"
+    },
+    {
+        link : "./img/blind-coding.jpg"
+    },
+    {
+        link : "./img/previous/img5.JPG"
+    },
+    {
+        link : "./img/blind-coding.jpg"
+    },
+    {
+        link : "./img/blind-coding.jpg"
+    }
+];
+
+// console.log(links[0].link)
+
+const infos = document.querySelectorAll('.more-info')
+
+infos.forEach((info, index)=> {
+    info.onclick = ()=>{
+        prevImg.src = links[index].link;
+        prevHolder.style.display = "flex";
+    }
+})
