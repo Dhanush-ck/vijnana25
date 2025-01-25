@@ -398,9 +398,12 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
     color: #7c3aed;
     transition: 0.2s;
+}
+    
+.more-info-button {
+    cursor: pointer;
     &:hover{
         color: white;
     }
