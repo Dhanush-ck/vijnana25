@@ -104,6 +104,10 @@ body {
     pointer-events: all;
 }
 
+.navigation a {
+    transition: 0.2s;
+}
+
 .navigation a:hover {
     color: #7c3aed;
     filter: drop-shadow(0 0 5px black);
@@ -371,7 +375,8 @@ p {
 
 .button {
     display: grid;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: auto 1fr auto;
+    /* grid-template-columns: 1fr 1fr; */
 }
 
 .event-register {
@@ -387,6 +392,18 @@ p {
 .event-register:hover {
     background-color: white;
     color: #7c3aed;
+}
+
+.more-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: #7c3aed;
+    transition: 0.2s;
+    &:hover{
+        color: white;
+    }
 }
 
 #cursor {
