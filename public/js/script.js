@@ -226,7 +226,7 @@ links = [
 
 // console.log(links[0].link)
 
-const infos = document.querySelectorAll('.more-info')
+const infos = document.querySelectorAll('.more-info-button')
 
 infos.forEach((info, index)=> {
     info.onclick = ()=>{
