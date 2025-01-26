@@ -337,6 +337,34 @@ p {
     margin: 40px;
 }
 
+.event-nav {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+}
+
+.see-all {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.see-all span {
+    background-color: #7c3aed;
+    width: 95px;
+    text-align: center;
+    padding: 5px;
+    font-family: "Exo", sans-serif;
+    font-weight: 700;
+    transition: 0.2s;
+    cursor: pointer;
+    &:hover {
+        background-color: white;
+        color: #7c3aed;
+    }
+}
+
 .event-list {
     display: flex;
     overflow-x: auto;
