@@ -209,7 +209,7 @@ const links = [
     },
     {
         id: 4,
-        link : "./img/no-image.png"
+        link : "./img/current/iot.jpg"
     },
     {
         id: 5,
@@ -217,7 +217,7 @@ const links = [
     },
     {
         id: 6,
-        link : "./img/no-image.png"
+        link : "./img/current/ml.jpg"
     },
     {
         id: 7,
@@ -225,7 +225,7 @@ const links = [
     },
     {
         id: 8,
-        link : "./img/no-image.png"
+        link : "./img/current/cybersecurity.jpg"
     },
     {
         id: 9,
