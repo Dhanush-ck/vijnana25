@@ -194,36 +194,50 @@ prevHolder.onclick = ()=>{
     prevHolder.style.display = 'none';
 }
 
-links = [
+const links = [
     {
-        link : "./img/current/virtual kickoff  edited.jpg"
+        id: 1,
+        link : "./img/current/virtual kickoff  .jpg"
     },
     {
-        link : "./img/current/fingers on fire poster.jpg"
+        id: 2,
+        link : "./img/current/fingers on fire .jpg"
     },
     {
+        id: 3,
+        link : "./img/current/Debugging poster.jpg"
+    },
+    {
+        id: 4,
         link : "./img/no-image.png"
     },
     {
+        id: 5,
+        link : "./img/current/technical-quiz.jpg"
+    },
+    {
+        id: 6,
         link : "./img/no-image.png"
     },
     {
+        id: 7,
+        link : "./img/current/code battle .jpg"
+    },
+    {
+        id: 8,
         link : "./img/no-image.png"
     },
     {
-        link : "./img/no-image.png"
+        id: 9,
+        link : "./img/current/decryption poster.jpg"
     },
     {
-        link : "./img/current/code battle poster.jpg"
+        id: 10,
+        link : "./img/current/code in dark .jpg"
     },
     {
-        link : "./img/no-image.png"
-    },
-    {
-        link : "./img/no-image.png"
-    },
-    {
-        link : "./img/no-image.png"
+        id: 11,
+        link : "./img/current/pixel perfect .jpg"
     }
 ];
 
