@@ -34,8 +34,8 @@ const colleges = [
         imgLink: "./img/coding-group.jpg",
         eventName: "Workshop on IOT",
         eventDesc: "Intersting talk and class on the topic Internet Of Things(IOT) from an experienced mentors.",
-        formLink: "",
-        link : "./img/no-image.png"
+        formLink: "https://forms.gle/eZcqiT1Qki1M8dpP8",
+        link : "./img/current/iot.jpg"
     },
     {
         id: 5,
@@ -51,7 +51,7 @@ const colleges = [
         eventName: "Workshop on ML",
         eventDesc: "Intersting talk and class on the topic Machine Learning from an experienced mentors.",
         formLink: "https://forms.gle/YVZWNaVtn3XobQzE8",
-        link : "./img/no-image.png"
+        link : "./img/current/ml.jpg"
     },
     {
         id: 7,
@@ -67,7 +67,7 @@ const colleges = [
         eventName: "Workshop on Cybersecurity",
         eventDesc: "Intersting talk on the topic Cybersecurity from an experienced mentors.",
         formLink: "https://forms.gle/VX3kzW639vbuH1dD6",
-        link : "./img/no-image.png"
+        link : "./img/current/cybersecurity.jpg"
     },
     {
         id: 9,
