@@ -2,7 +2,8 @@
   "hosting": {
     "public": "public",
     "rewrites": [
-      { "source": "/reveal", "destination": "/reveal.html"}
+      { "source": "/reveal", "destination": "/reveal.html"},
+      { "source": "/events", "destination": "/events.html"}
     ],
     "ignore": [
       "firebase.json",
