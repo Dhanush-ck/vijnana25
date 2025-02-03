@@ -9,7 +9,7 @@ const colleges = [
         id: 1,
         imgLink: "./img/efootball.jpg",
         eventName: "Virtual Kickoff",
-        eventDesc: "E-football gaming competition. Semifinal and final will be conducted offline at venue.",
+        eventDesc: "E-football gaming competition. Event is conducted completely online.",
         formLink: "https://forms.gle/MdMPcgBP588ZrVGt5",
         link : "./img/current/virtual kickoff  .jpg"
     },
@@ -100,7 +100,7 @@ const schools = [
         id: 1,
         imgLink: "./img/efootball.jpg",
         eventName: "Virtual Kickoff",
-        eventDesc: "E-football gaming competition. Semifinal and final will be conducted offline at venue.",
+        eventDesc: "E-football gaming competition. Event is conducted completely online.",
         formLink: "https://forms.gle/MdMPcgBP588ZrVGt5",
         link : "./img/current/virtual kickoff  .jpg"
     },
