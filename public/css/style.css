@@ -259,6 +259,21 @@ li {
     /* filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.5)); */
 }
 
+.message {
+    position: absolute;
+    width: 100%;
+    height: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.new-message {
+    font-size: 20px;
+    opacity: 0;
+    animation: fadeAnimation 5s ease forwards infinite;
+}
+
 .info {
     height: auto;
     background-color: #1f1f2f;
@@ -562,6 +577,15 @@ p {
     }
 }
 
+@keyframes fadeAnimation {
+    0%, 50%, 100% {
+        opacity: 0;
+    }
+    25%, 75% {
+        opacity: 1;
+    }
+}
+
 @keyframes slideDown {
     from {
         opacity: 0;
@@ -584,7 +608,95 @@ p {
     }
 }
 
-@media only screen and (min-width: 300px) and (max-width: 400px) {
+@media only screen and (max-width: 330px) {
+    .vijnana {
+        font-size: 15px;
+        letter-spacing: 5px;
+        margin: 2px 5px 5px 0;
+    }
+
+    .banner-video {
+        height: 100vh;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .menu-holder {
+        display: flex;
+    }
+
+    .menu {
+        display: block;
+        height: 20px;
+    }
+
+    .line {
+        display: none;
+        height: 100%;
+    }
+
+    .counter {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .counter-element {
+        line-height: 30px;
+    }
+
+    .counter-time {
+        font-size: 70px;
+    }
+
+    .new-message {
+        font-size: 13px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    .event {
+        min-width: 300px;
+        max-width: 300px;
+    }
+    
+    .event-register:hover {
+        background-color: #7c3aed;
+        color: white;
+    }
+
+    .image-holder {
+        min-width: 300px;
+        max-width: 300px;
+    }
+    
+    #cursor {
+        display: none;
+    }
+
+    .follow {
+        margin: 0 0 0 10px;
+    }
+
+    .follow a {
+        gap: 7px;
+    }
+
+    .follow img {
+        height: 15px;
+    }
+}
+
+@media only screen and (min-width: 330px) and (max-width: 400px) {
     .vijnana {
         font-size: 15px;
         letter-spacing: 5px;
@@ -622,6 +734,10 @@ p {
 
     .counter-time {
         font-size: 100px;
+    }
+
+    .new-message {
+        font-size: 13px;
     }
 
     h2 {
@@ -700,6 +816,10 @@ p {
         gap: 50px;
     }
 
+    .new-message {
+        font-size: 18px;
+    }
+
     h2 {
         font-size: 25px;
     }
@@ -727,5 +847,11 @@ p {
 
     .follow img {
         height: 20px;
+    }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 850px) {
+    .counter-time {
+        font-size: 95px;
     }
 }
