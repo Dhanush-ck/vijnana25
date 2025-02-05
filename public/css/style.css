@@ -270,8 +270,8 @@ li {
 
 .new-message {
     font-size: 20px;
-    opacity: 0;
-    animation: fadeAnimation 5s ease forwards infinite;
+    /* opacity: 0; */
+    /* animation: fadeAnimation 5s ease-in forwards infinite; */
 }
 
 .info {
@@ -578,10 +578,10 @@ p {
 }
 
 @keyframes fadeAnimation {
-    0%, 50%, 100% {
+    0%, 100% {
         opacity: 0;
     }
-    25%, 75% {
+    50%{
         opacity: 1;
     }
 }
