@@ -146,10 +146,10 @@ function timer() {
         second.innerHTML = "0" + Second
     
     if(distance < 0) {
-        day.innerHTML = 0
-        hour.innerHTML = 0
-        minute.innerHTML = 0
-        second.innerHTML = 0
+        day.innerHTML = "00"
+        hour.innerHTML = "00"
+        minute.innerHTML = "00"
+        second.innerHTML = "00"
     }
 }
 
