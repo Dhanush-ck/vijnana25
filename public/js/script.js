@@ -27,63 +27,6 @@ imageList.addEventListener('wheel', (event)=>{
     }
 })
 
-// const cursor = document.querySelector('.cursor');
-// const header2 = document.querySelectorAll('a');
-
-// grow cursor on hover 
-// function growCursor() {
-//     // cursor.style.mixBlendMode = 'difference';
-//     cursor.style.backgroundColor = 'transparent'
-//     cursor.style.border = '.5px  white dashed'
-//     cursor.style.scale = '4';
-//     isActive = true;
-// }
-
-// shrink cursor on hover out 
-// function shrinkCursor() {
-//     // cursor.style.mixBlendMode = 'normal';
-//     cursor.style.backgroundColor = 'white'
-//     cursor.style.scale = '1';
-//     isActive = false;
-// }
-
-// adding cursor animations 
-// header2.forEach((header) => {
-//     header.addEventListener('mousemove', growCursor)
-//     header.addEventListener('mouseleave', shrinkCursor)
-// })
-
-// to follow the cursor 
-// window.addEventListener('mousemove', (e)=> {
-//     var x = e.clientX;
-//     var y = e.clientY;
-//     cursor.style.left = x + 'px';
-//     cursor.style.top = y + 'px';
-// })
-
-// var timeout;
-// var isHidden = false;
-// var isActive = false;
-
-// document.addEventListener("mousemove", magicMouse);
-
-// hide the cursor after sometime 
-// function magicMouse() {
-//     if (timeout) {
-//         clearTimeout(timeout);
-//     }
-//     timeout = setTimeout(function() {
-//         if (!isHidden && !isActive) {
-//             cursor.style.display = 'none';
-//             isHidden = true;
-//         }
-//     }, 1000);
-//     if (isHidden) {
-//         cursor.style.display = 'block';
-//         isHidden = false;
-//     }
-// };
-
 // animate event list on scroll 
 const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
